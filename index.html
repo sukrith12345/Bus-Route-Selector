@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="D:\new 2 star\new one\public-transport_10473627.png">
+</head>
+<body>
+    <div class="container">
+        <h1>🚌 Bus Route Selector</h1>
+
+        <form id="busForm">
+            <div class="form-group">
+                <label for="origin">Origin</label>
+                <select id="origin" required>
+                    <option value="">Select origin...</option>
+                    <option value="kotagiri">kotagiri</option>
+                    <option value="tirupur">tirupur</option>
+                    <option value="kengarai">kengarai</option>
+                    <option value="thunari">thunari</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" required>
+                    <option value="">Select destination...</option>
+                    <option value="kotagiri">kotagiri</option>
+                    <option value="tirupur">tirupur</option>
+                    <option value="kengarai">kengarai</option>
+                    <option value="thunari">thunari</option>
+                </select>
+            </div>
+
+            <button type="submit">Find Next Bus</button>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Next Available Bus</h2>
+            <div class="bus-info" id="busInfo"></div>
+        </div>
+
+        <div class="current-time">
+            Current time: <span id="currentTime"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
